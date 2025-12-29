@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+
+<body>
+    <div id="background"></div>
+    <div id="header">
+        <div id="lhead">
+            <h3 id="ltitle">Login</h3>
+        </div>
+        <div id="rhead">
+            <h3 id="rtitle">Registration</h3>
+        </div>
+    </div>
+    <div id="outer">
+        <div id="left">
+            <form action="http://localhost/Project/login.php" id="form" method="POST">
+                <h2 id="title"><u id="underline">Lo</u>gin</h2>
+
+                <label for="username">
+                    <input type="text" name="uname" id="uname" placeholder="Enter Username" required><br>
+                </label>
+
+                <label for="mail">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Mail ID" required><br>
+                </label>
+
+                <label for="pass" class="passw">
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required><br>
+                    <img src="../images/eyeclose.png" id="togglePassword1" class="eye-icon"><br>
+                </label>
+
+                <label for="checkox">
+                    <input type="checkbox" name="check" id="checkbox" required><span id="checkb">I accept all terms and conditions</span><br>
+                </label>
+
+                <button type="submit" id="submit">Sign In</button>
+
+                <p align="center"><span id="line">Create an account?</span> 
+                    <a href="singup.html" id="login">Sign Up</a>
+                </p>
+            </form>
+        </div>
+        <div id="right">
+        </div>
+    </div>
+    <script src="../JavaScript/login.js"></script>
+</body>
+
+</html>
